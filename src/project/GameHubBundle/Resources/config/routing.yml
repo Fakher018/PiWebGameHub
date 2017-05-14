@@ -1,0 +1,51 @@
+project_game_hub_homepage:
+    path:     /
+    defaults: { _controller: projectGameHubBundle:Default:index }
+
+affichagem:
+    path:     /AllPublications
+    defaults: { _controller: projectGameHubBundle:Default:test }
+affichagempro:
+    path:     /index
+    defaults: { _controller: projectGameHubBundle:Default:testpro }
+
+afficheProfil:
+    path:     /AfficheProfil
+    defaults: { _controller: projectGameHubBundle:Chaine:list }
+
+ModifierProfil:
+    path:     /ModifyProfil/{id}
+    defaults: { _controller: projectGameHubBundle:Chaine:modifier }
+
+DeleteProfil:
+    path:     /DeleteProfil/{id}
+    defaults: { _controller: projectGameHubBundle:Chaine:supprimer }
+
+AjoutProfil:
+    path:     /AjoutProfile
+    defaults: { _controller: projectGameHubBundle:Chaine:ajout }
+
+AjoutPub:
+    path:     /AjoutPublication
+    defaults: { _controller: projectGameHubBundle:Publication:ajout }
+AffichePub:
+    path:     /AffichePublication
+    defaults: { _controller: projectGameHubBundle:Publication:AffichePub }
+
+AfficheAllPub:
+    path:     /AfficheAllPublication
+    defaults: { _controller: projectGameHubBundle:Publication:AfficheAllPub }
+
+ModifyPub:
+    path:     /ModifyPublication/{id}
+    defaults: { _controller: projectGameHubBundle:Publication:modifier }
+
+DeletePub:
+    path:     /DeletePublication/{id}
+    defaults: { _controller: projectGameHubBundle:Publication:supprimer }
+
+AfficheAllPubDQL:
+    path:     /AfficheAllPublicationDQL
+    defaults: { _controller: projectGameHubBundle:Publication:findDQL }
+
+
